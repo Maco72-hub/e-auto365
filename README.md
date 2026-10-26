@@ -20,10 +20,10 @@ Die Dateien in diesem Ordner sind eine fertige statische Web-App. Für eine Andr
 
 1. In der App unter **Excel-Austausch** die CSV für Ladevorgänge oder Kosten herunterladen.
 2. In Excel öffnen oder über **Daten → Aus Text/CSV** importieren.
-3. Für Daten aus der vorhandenen Arbeitsmappe das passende Blatt als CSV exportieren und in der App einlesen. Der Abgleich nutzt die ID.
+3. In der neuen Arbeitsmappe sind `Ladevorgaenge` und `Kosten` sichtbar. Exportiere jedes gewünschte Blatt einzeln als CSV und lies es in der App ein. Der Abgleich nutzt die ID.
 4. Bewahre die JSON-Sicherung zusätzlich auf. Browserdaten können beim Löschen der Browserdaten oder beim Entfernen der App gelöscht werden.
 
-Die `.xlsm`-Originaldatei wird von der App nicht verändert. Da ihre Eingabeblätter sehr ausgeblendet sind, sollte der CSV-Austausch zunächst mit einer Kopie der Arbeitsmappe erfolgen.
+Die App liest keine `.xlsm`-Datei direkt ein. Für den Austausch werden CSV-Dateien verwendet. Lass beim Export die Spalte `ID` stehen, damit bestehende Datensätze aktualisiert werden können.
 
 ## Android-APK
 
